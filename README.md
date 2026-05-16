@@ -65,19 +65,6 @@ Built with ❤️ using HTML, CSS, JavaScript, and Chart.js.
 
 ---
 
-# 📂 Project Structure
-
-```text
-Habit-Rabbit/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
----
-
 # 🏷 Habit Categories
 
 | Category | Color |
