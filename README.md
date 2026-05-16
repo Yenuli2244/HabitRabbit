@@ -151,4 +151,12 @@ This project was developed for:
 
 ---
 
+## 👨‍💻 Developed By
+
+**Yenuli Minsandi**
+
+BSc in Information Technology
+
+University of Vavuniya
+
 
