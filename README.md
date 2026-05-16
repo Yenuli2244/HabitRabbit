@@ -1,4 +1,4 @@
-# ✨ Habit Rabbit – Smart Habit Tracker App 🐰
+# ✨ HabitRabbit – Smart Habit Tracker App 🐰
 
 A beautiful and interactive Habit Tracker web application designed to help users build better daily routines, stay productive, and track progress visually.
 
@@ -128,36 +128,6 @@ The application is optimized for:
 - 💻 Desktop
 - 📱 Mobile
 - 📲 Tablet
-
----
-
-# 🚀 How to Run the Project
-
-## 1️⃣ Download or Clone Repository
-
-```bash
-git clone <your-repository-link>
-```
-
----
-
-## 2️⃣ Open Project Folder
-
-```bash
-cd Habit-Rabbit
-```
-
----
-
-## 3️⃣ Run Application
-
-Simply open:
-
-```text
-index.html
-```
-
-in your browser.
 
 ---
 
