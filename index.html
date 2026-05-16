@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitRabbit</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>HabitRabbit 🐰</h1>
+
+        <!-- DARK MODE -->
+        <button id="darkToggle">🌙 Dark Mode</button>
+
+        <!-- STATS -->
+        <div class="stats">
+            <p>Total: <span id="total">0</span></p>
+            <p>Completed: <span id="completed">0</span></p>
+        </div>
+
+        <!-- PROGRESS BAR -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- STREAK -->
+        <h3 id="streak">🔥 Streak: 0</h3>
+
+        <!-- INPUT SECTION -->
+        <div class="input-section">
+
+            <input type="text"
+                   id="habitInput"
+                   placeholder="Enter a habit"
+                   autocomplete="off">
+
+            <select id="categorySelect">
+                <option value="Study">📚 Study</option>
+                <option value="Health">💪 Health</option>
+                <option value="Work">💼 Work</option>
+                <option value="Self">🌱 Self Care</option>
+            </select>
+
+            <button id="addBtn">Add Habit</button>
+
+        </div>
+
+        <!-- HABIT LIST -->
+        <ul id="habitList"></ul>
+
+        <!-- ANALYTICS -->
+        <div class="analytics">
+
+            <h2>Analytics</h2>
+
+            <div class="analytics-box">
+                <p>📚 Study: <span id="studyCount">0</span></p>
+                <p>💪 Health: <span id="healthCount">0</span></p>
+                <p>💼 Work: <span id="workCount">0</span></p>
+                <p>🌱 Self Care: <span id="selfCount">0</span></p>
+            </div>
+
+            <canvas id="habitChart"></canvas>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS (IMPORTANT ORDER) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

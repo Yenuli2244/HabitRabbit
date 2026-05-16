@@ -1,0 +1,334 @@
+body{
+    font-family: Arial, sans-serif;
+    background: #f3f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* CONTAINER */
+.container{
+    width: 500px;
+    background:#fffff0 ;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+h1{
+    text-align: center;
+    color: #7c3aed;
+    margin-bottom: 20px;
+}
+
+/* DARK MODE BUTTON */
+#darkToggle{
+    margin-bottom: 20px;
+}
+
+/* STATS */
+.stats{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #7c3aed;
+}
+
+/* PROGRESS BAR */
+.progress-container{
+    width: 100%;
+    height: 18px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar{
+    height: 100%;
+    width: 0%;
+    background: #7c3aed;
+    transition: 0.3s;
+}
+
+/* STREAK */
+#streak{
+    text-align: center;
+    color: #7c3aed;
+    margin-bottom: 20px;
+}
+
+/* INPUT SECTION */
+.input-section{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+input{
+    flex: 2;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+/* SELECT */
+select{
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 15px;
+}
+
+/* BUTTONS */
+button{
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #7c3aed;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #6d28d9;
+}
+
+/* HABIT LIST */
+ul{
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    margin: 8px 0;
+    background: #ede9fe;
+    border-radius: 8px;
+}
+
+li span {
+    flex: 1;
+}
+
+li button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Done button */
+li button:nth-child(2) {
+    background-color: #7c3aed;
+    color: white;
+}
+
+li button:nth-child(3) {
+    background-color: #22c55e;
+    color: white;
+}
+
+
+/* Delete button */
+li button:nth-child(4) {
+    background-color: #ef4444;
+    color: white;
+}
+
+
+
+/* COMPLETED */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    background: #eaffea;
+}
+
+/* DARK MODE */
+.dark-mode{
+    background: #0f172a;
+}
+
+.dark-mode .container{
+    background: #1e293b;
+}
+
+.dark-mode h1,
+.dark-mode .stats,
+.dark-mode #streak{
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode select{
+    background: #334155;
+    color: white;
+    border: 1px solid #475569;
+}
+
+.dark-mode li{
+    background: #334155;
+    color: white;
+}
+
+.dark-mode .progress-container{
+    background: #475569;
+}
+
+.analytics{
+    margin-top: 30px;
+}
+
+.analytics h2{
+    text-align: center;
+    color: #7c3aed;
+    margin-bottom: 15px;
+}
+
+.analytics-box{
+    background: #ede9fe;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.analytics-box p{
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+canvas{
+    margin-top: 20px;
+}
+
+.container{
+
+	animation:
+    fadeIn 0.8s ease,
+    float 4s ease-in-out infinite;
+}
+
+.category-tag {
+    margin-left: 10px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+li{
+
+    animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp{
+
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-6px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+transition:
+    transform 0.3s,
+    background 0.3s;
+	
+	input:focus,
+select:focus{
+
+    box-shadow:
+        0 0 10px rgba(255,255,255,0.3);
+}
+
+@media (max-width: 600px){
+
+    .container{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .input-section{
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    button{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .stats{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    #darkToggle{
+        width: 100%;
+    }
+
+    li{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    li button{
+        width: 100%;
+    }
+
+}
